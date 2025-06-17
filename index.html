@@ -1,6 +1,41 @@
-﻿<html>
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <script src="js/pageSetting.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NaokiFuda PortFolio</title>
+
+    <style>
+    body {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+      font-family: sans-serif;
+      background-color: #f5f5f5;
+    }
+    .block {
+      width: calc(50% - 20px);
+      background:white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+  </style>
+
+</head>
 <body>
-<div >index test</div>
-<script type="text/javascript" src="pageSetting.js" gapi_processed="true"></scritp>
+    <div class="block">
+    <h1>見出しタイトル1</h1>
+    <h2>セクションタイトル1</h2>
+    <p>これは本文です。テンプレートとして機能するテキストです。</p>
+  </div>
+
+  <div class="block">
+    <h1>見出しタイトル2</h1>
+    <h2>セクションタイトル2</h2>
+    <p>こちらも本文のサンプルです。ページ構成確認用です。</p>
+  </div>
 </body>
 </html>
