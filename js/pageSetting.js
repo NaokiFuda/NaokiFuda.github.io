@@ -36,4 +36,19 @@ window.onload = function () {
   document.querySelectorAll("h2").forEach(el => applyStyle(el, styleConfig.heading2));
   // すべてのpにbodyTextスタイル
   document.querySelectorAll("p").forEach(el => applyStyle(el, styleConfig.bodyText));
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  document.querySelectorAll('.fadein').forEach(el => {
+    observer.observe(el);
+  });
 };
