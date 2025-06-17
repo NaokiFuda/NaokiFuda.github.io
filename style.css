@@ -152,7 +152,7 @@ footer {
 .footer-row {
   display: flex;
   justify-content: center; 
-  gap: 40px; 
+  gap: 80px; 
   align-items: center;
   margin-top: 20px;
 }
