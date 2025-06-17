@@ -18,6 +18,8 @@ const styleConfig = {
   }
 };
 
+
+
 // スタイルを適用する関数
 function applyStyle(element, styleObj) {
   Object.assign(element.style, styleObj);
@@ -26,7 +28,7 @@ function applyStyle(element, styleObj) {
 // ページ読み込み後に適用
 window.onload = function () {
     document.body.style.backgroundColor = "#302e2e";
-    document.body.style.textAlign = "center";
+    document.body.style.textAlign = "left";
     document.body.style.fontFamily = "'Zen Maru Gothic', sans-serif";
   // すべてのH1にheading1スタイル
   document.querySelectorAll("h1").forEach(el => applyStyle(el, styleConfig.heading1));
