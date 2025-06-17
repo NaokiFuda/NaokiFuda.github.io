@@ -128,15 +128,16 @@ footer {
 .footer-content {
   max-width: 800px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
-
-/* 卒業・自己紹介は通常の縦並び */
 
 .footer-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 footer a {
