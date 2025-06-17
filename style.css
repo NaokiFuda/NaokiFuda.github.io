@@ -92,6 +92,49 @@ body {
   line-height: 1.6;
 }
 
+.icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 6px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+/* 各種アイコン指定 */
+.icon.steam {
+  background-image: url('icons/steam.svg');
+}
+
+.icon.unity {
+  background-image: url('icons/unity.svg');
+}
+
+.icon.windows {
+  background-image: url('icons/windows.svg');
+}
+
+footer {
+  background-color: #222;
+  color: #eee;
+  padding: 20px;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 60px;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.3);
+}
+
+footer a {
+  color: #82cfff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
 /* 区切り線 */
 hr {
   border: none;
