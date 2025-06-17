@@ -131,6 +131,20 @@ footer a {
   text-decoration: none;
 }
 
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; /* 左右に離す */
+  align-items: center;
+}
+
+/* リンクの装飾 */
+footer a {
+  color: #82cfff;
+  text-decoration: none;
+}
+
 footer a:hover {
   text-decoration: underline;
 }
