@@ -115,6 +115,22 @@ body {
   background-image: url('icons/windows.svg');
 }
 
+.external-link {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 6px 14px;
+  background-color: #4a90e2;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.external-link:hover {
+  background-color: #357ABD;
+}
+
 footer {
   background-color: #222;
   color: #eee;
