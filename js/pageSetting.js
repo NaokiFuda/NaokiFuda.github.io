@@ -25,6 +25,7 @@ function applyStyle(element, styleObj) {
 
 // ページ読み込み後に適用
 window.onload = function () {
+    document.body.style.backgroundColor = "#302e2e";
   // すべてのH1にheading1スタイル
   document.querySelectorAll("h1").forEach(el => applyStyle(el, styleConfig.heading1));
   // すべてのH2にheading2スタイル
