@@ -135,9 +135,10 @@ footer {
 
 .footer-row {
   display: flex;
-  justify-content: space-between;
+  justify-content: center; 
+  gap: 40px; 
   align-items: center;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 footer a {
