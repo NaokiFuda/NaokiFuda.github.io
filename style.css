@@ -159,6 +159,11 @@ grid-item img:hover {
 /* 各種アイコン指定 */
 .icon.steam {
   background-image: url('icons/steam.svg');
+  background-size: contain;  /* または cover */
+  background-repeat: no-repeat;
+  width: 40px;   /* 必須！ */
+  height: 40px;  /* 必須！ */
+  display: inline-block; 
 }
 
 .icon.unity {
