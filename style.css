@@ -2,19 +2,51 @@ body {
   margin: 0;
   padding: 40px 20px;
   font-family: 'Zen Maru Gothic', sans-serif;
-  background-color: #f8f9fa;
-  color: #333;
+  background-color: #302e2e;
+  color: #eee;
 
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
 
+.grid-container {
+  display: grid; /* グリッドコンテナとして定義 */
+  grid-template-columns: repeat(3, 1fr); /* 3つの列を等幅で作成 */
+  grid-template-rows: repeat(3, 100px); /* 3つの行を高さ100pxで作成 (任意) */
+  gap: 10px; /* グリッドアイテム間の隙間 */
+  width: 100%; /* コンテナの幅 */
+  max-width: 600px; /* 例として最大幅を設定 */
+  margin: 0 auto; /* 中央寄せ */
+  border: 1px solid #ccc; /* コンテナの境界線 */
+  padding: 10px; /* コンテナの内側の余白 */
+  overflow: hidden; 
+  
+}
+
+.grid-item {
+  background-color: #302e2e; /* アイテムの背景色 */
+  border: 1px solid #ddd; /* アイテムの境界線 */
+  display: flex; /* アイテム内のコンテンツを中央寄せするため */
+  justify-content: center; /* 水平方向の中央寄せ */
+  align-items: center; /* 垂直方向の中央寄せ */
+  font-size: 1.5em; /* 文字サイズ */
+  height: 100%; /* 親の高さに合わせる */
+  aspect-ratio: 1 / 1;
+}
+
+.grid-item img {
+  width: 100%; /* **重要**: 画像の幅を親要素（.grid-item）の幅に合わせる */
+  height: 100%; /* **重要**: 画像の高さを親要素（.grid-item）の高さに合わせる */
+  object-fit: cover; 
+  display: block;
+}
+
 .block {
   display: flex;
   flex-direction: row;
   gap: 20px;
-  background: white;
+  background: 302e2e;
   padding: 20px;
   margin-bottom: 40px;
   border-radius: 10px;
@@ -111,10 +143,6 @@ body {
   background-image: url('icons/unity.svg');
 }
 
-.icon.windows {
-  background-image: url('icons/windows.svg');
-}
-
 .product-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -123,7 +151,7 @@ body {
 }
 
 .product-card {
-  background: white;
+  background: #302e2e;
   border-radius: 10px;
   box-shadow: 0 0 8px rgba(0,0,0,0.1);
   overflow: hidden;
@@ -236,7 +264,7 @@ hr {
 .sticky-menu {
   position: sticky;
   top: 0;
-  background: white;
+  background: #302e2e;
   padding: 10px 0;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   z-index: 1000;
@@ -253,7 +281,7 @@ hr {
 
 .sticky-menu a {
   text-decoration: none;
-  color: #333;
+  color: #eee;
   font-weight: bold;
 }
 
