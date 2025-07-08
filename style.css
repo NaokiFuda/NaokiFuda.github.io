@@ -10,6 +10,11 @@ body {
   margin-right: auto;
 }
 
+.grid-wrapper {
+  display: block; /* ← 親の flex の影響を断つ */
+  width: 100%;
+}
+
 .grid-section {
   display: flex;
   flex-direction: column;
@@ -19,32 +24,31 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 常に3列 */
-  /*grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));*/
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 16px;
+  width: 100%;
   max-width: 800px;
   margin: 0 auto;
-  padding: 10px;
-}
-
-.grid-item {
-  overflow: hidden;
-  border-radius: 8px;
-  background-color: #1e1e1e;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
 .grid-item img {
   width: 100%;
-  height: auto; /* ← 高さは画像に任せる */
+  height: auto;
   display: block;
   object-fit: cover;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
 }
 
-.grid-item:hover img {
-  transform: scale(1.03);
+.grid-link a {
+  padding: 0.5em 1em;
+  border-radius: 6px;
+  background-color: #1976d2;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s ease;
+}
+.grid-link a:hover {
+  background-color: #1565c0;
 }
 
 .block {
