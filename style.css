@@ -36,7 +36,11 @@ body {
   height: auto;
   display: block;
   object-fit: cover;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease; /* ← 変化をなめらかに */
+}
+
+.grid-item img:hover {
+  transform: scale(1.05); /* ← 拡大率（1.05 = 5%アップ） */
 }
 
 .grid-link a {
@@ -50,10 +54,6 @@ body {
 }
 .grid-link a:hover {
   background-color: #1565c0;
-}
-
-grid-item img:hover {
-  transform: scale(1.05); /* ← 拡大率（1.05 = 5%アップ） */
 }
 
 .block {
