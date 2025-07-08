@@ -12,10 +12,10 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); /* 自動で折り返す3列 */
-  gap: 12px;
-  width: 100%;
-  max-width: 600px;
+  /*grid-template-columns: repeat(3, 1fr); /* 常に3列 */
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 10px;
 }
@@ -24,19 +24,20 @@ body {
   overflow: hidden;
   border-radius: 8px;
   background-color: #1e1e1e;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
 .grid-item img {
   width: 100%;
-  height: auto;
+  height: auto; /* ← 高さは画像に任せる */
   display: block;
   object-fit: cover;
+  border-radius: 8px;
   transition: transform 0.3s ease;
 }
 
 .grid-item:hover img {
-  transform: scale(1.05); /* 少しズーム */
+  transform: scale(1.03);
 }
 
 .block {
