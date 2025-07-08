@@ -10,6 +10,13 @@ body {
   margin-right: auto;
 }
 
+.grid-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 常に3列 */
@@ -59,6 +66,14 @@ body {
 .block .media img {
   width: 100%;
   border-radius: 8px;
+}
+
+.block .center {
+  display: flex;
+  justify-content: center; /* 中央寄せ */
+  align-items: flex-start; /* 縦の整列：必要に応じて変更 */
+  gap: 2rem; /* 子要素同士の間隔 */
+  flex-wrap: wrap; /* 画面が狭くなったら折り返す */
 }
 
 .block .info {
