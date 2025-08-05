@@ -58,8 +58,7 @@ body {
   flex-direction: column; /* 垂直方向に子要素を並べる */
   align-items: center; /* 子要素を中央揃えにする（任意） */
   gap: 8px; /* 子要素間の隙間 */
-  padding: 16px; /* アイテム内の余白 */
-  border: 1px solid #ddd; /* 境界線（デバッグ用） */
+  /*border: 1px solid #ddd;  境界線（デバッグ用） */
 }
 
 /* タイトル、画像、説明のスタイル */
