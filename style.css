@@ -53,17 +53,12 @@ body {
   margin: 0 auto;
 }
 
-.grid-item img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-  transition: transform 0.3s ease;
+.grid-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;  /* 中央寄せ */
-  background: #222;    /* 任意の背景 */
+  text-align: center;
+  background: #222;
   padding: 1em;
   border-radius: 8px;
 }
