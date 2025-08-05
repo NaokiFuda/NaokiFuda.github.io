@@ -76,6 +76,9 @@ body {
   height: auto;
   display: block;
 }
+.grid-image-container img:hover {
+  cursor: pointer;
+}
 
 .grid-caption {
   /* スタイルを適宜調整 */
