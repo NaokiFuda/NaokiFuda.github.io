@@ -37,6 +37,21 @@ window.onload = function () {
   // すべてのpにbodyTextスタイル
   document.querySelectorAll("p").forEach(el => applyStyle(el, styleConfig.bodyText));
 
+  document.querySelectorAll(".pop-item").forEach((item,index) => {
+  item.addEventListener('click', () => {
+    const popup = document.querySelector(`.popupOverlay.popup${index + 1}`);
+    popup.classList.add('active');
+    });
+  });
+  document.querySelectorAll('.popupOverlay').forEach(popup => {
+    popup.addEventListener('click', (e) => {
+      // 背景（自身）がクリックされた場合だけ閉じる（中身をクリックした場合は無視）
+      if (e.target === popup) {
+        popup.classList.remove('active');
+      }
+    });
+  });
+
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
