@@ -53,6 +53,37 @@ body {
   margin: 0 auto;
 }
 
+.grid-item-pop-item {
+  display: flex; /* flexbox を使用 */
+  flex-direction: column; /* 垂直方向に子要素を並べる */
+  align-items: center; /* 子要素を中央揃えにする（任意） */
+  gap: 8px; /* 子要素間の隙間 */
+  padding: 16px; /* アイテム内の余白 */
+  border: 1px solid #ddd; /* 境界線（デバッグ用） */
+}
+
+/* タイトル、画像、説明のスタイル */
+.grid-title {
+  /* スタイルを適宜調整 */
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.grid-image-container {
+  width: 100%;
+}
+.grid-image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.grid-caption {
+  /* スタイルを適宜調整 */
+  font-size: 0.9rem;
+  text-align: center;
+}
+
 .grid-item {
   display: flex;
   flex-direction: column;
