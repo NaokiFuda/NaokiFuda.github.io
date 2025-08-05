@@ -30,6 +30,7 @@ body {
   padding: 2em;
   border-radius: 10px;
   text-align: center;
+}
 
 .grid-wrapper {
   display: block; /* ← 親の flex の影響を断つ */
