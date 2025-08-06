@@ -71,7 +71,6 @@ window.onload = function () {
 
   document.querySelectorAll(".popupContent").forEach(target => {
 
-    const img = target.querySelector("img");
     target.addEventListener("keydown", (e) => {
       if (e.key === "Shift") {
         isZooming = true;
@@ -100,7 +99,7 @@ window.onload = function () {
     }, { passive: false });
 
     function updateTransform() {
-      img.style.transform = `translate(${offsetX}px, ${offsetY}px) scale(${scale})`;
+      target.style.transform = `translate(${offsetX}px, ${offsetY}px) scale(${scale})`;
     }
 
   });
