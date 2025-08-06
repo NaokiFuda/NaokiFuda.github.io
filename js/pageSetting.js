@@ -72,6 +72,7 @@ window.onload = function () {
 
   document.querySelectorAll(".popupContent").forEach(target => {
 
+    const img = target.querySelector("img");
 
     target.addEventListener("mousedown", e => {
       isDragging = true;
@@ -101,10 +102,10 @@ window.onload = function () {
       updateTransform();
     }, { passive: false });
 
+    function updateTransform() {
+      img.style.transform = `translate(${offsetX}px, ${offsetY}px) scale(${scale})`;
+    }
+
   });
 
 };
-
-function updateTransform() {
-    img.style.transform = `translate(${offsetX}px, ${offsetY}px) scale(${scale})`;
-  }
