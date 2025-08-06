@@ -43,7 +43,7 @@ window.onload = function () {
   item.addEventListener('click', () => {
     const popup = document.querySelector(`.popupOverlay.popup${index + 1}`);
     popup.classList.add('active');
-    updateTransform(popup.querySelectorAll(".popupContent"),0,0,1);
+    updateTransform(popup.querySelector(".popupContent"),0,0,1);
     });
   });
   document.querySelectorAll('.popupOverlay').forEach(popup => {
