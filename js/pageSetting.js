@@ -44,6 +44,7 @@ window.onload = function () {
     const popup = document.querySelector(`.popupOverlay.popup${index + 1}`);
     popup.classList.add('active');
     updateTransform(popup.querySelector(".popupContent"),0,0,1);
+    offsetX =0;offsetY = 0;
     });
   });
   document.querySelectorAll('.popupOverlay').forEach(popup => {
