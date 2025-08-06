@@ -45,7 +45,7 @@ window.onload = function () {
     popup.classList.add('active');
     const popcontents = popup.querySelector(".popupContent");
     if(!popup.querySelector("noscroll")){
-      const height = popcontents.querySelector("img").clientHeight / 2 + 300;
+      const height = popcontents.querySelector("img").clientHeight / 2 - 300;
       updateTransform(popcontents,0,height,1);
       offsetX =0;offsetY = height;
     }
