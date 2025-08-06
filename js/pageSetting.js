@@ -74,19 +74,19 @@ window.onload = function () {
 
     const panAndzoom = target.querySelector(`.popupContent.popup${index + 1}`);
 
-    target.addEventListener("mousedown", e => {
+    panAndzoom.addEventListener("mousedown", e => {
       isDragging = true;
       lastX = e.clientX;
       lastY = e.clientY;
       img.style.cursor = "grabbing";
     });
 
-    target.addEventListener("mouseup", () => {
+    panAndzoom.addEventListener("mouseup", () => {
       isDragging = false;
       img.style.cursor = "grab";
     });
 
-    target.addEventListener("mousemove", e => {
+    panAndzoom.addEventListener("mousemove", e => {
       if (!isDragging) return;
       offsetX += e.clientX - lastX;
       offsetY += e.clientY - lastY;
@@ -95,7 +95,7 @@ window.onload = function () {
       updateTransform();
     });
 
-    target.addEventListener("wheel", e => {
+    panAndzoom.addEventListener("wheel", e => {
       e.preventDefault();
       const delta = e.deltaY < 0 ? 1.1 : 0.9;
       scale *= delta;
