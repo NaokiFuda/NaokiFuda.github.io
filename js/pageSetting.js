@@ -43,7 +43,7 @@ window.onload = function () {
   item.addEventListener('click', () => {
     const popup = document.querySelector(`.popupOverlay.popup${index + 1}`);
     popup.classList.add('active');
-    popup.style.transform = `translate(0px, 0px) scale(1)`;
+    updateTransform(popup,0,0,1);
     });
   });
   document.querySelectorAll('.popupOverlay').forEach(popup => {
@@ -95,13 +95,12 @@ window.onload = function () {
         const delta = e.deltaY < 0 ? 1.1 : 0.9;
         scale *= delta;
       }
-      updateTransform();
+      updateTransform(target,offsetX,offsetY,scale);
     }, { passive: false });
-
-    function updateTransform() {
-      target.style.transform = `translate(${offsetX}px, ${offsetY}px) scale(${scale})`;
-    }
-
   });
 
 };
+
+function updateTransform(target,offsetX,offsetY,scale) {
+      target.style.transform = `translate(${offsetX}px, ${offsetY}px) scale(${scale})`;
+}
