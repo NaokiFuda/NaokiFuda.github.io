@@ -43,6 +43,7 @@ window.onload = function () {
   item.addEventListener('click', () => {
     const popup = document.querySelector(`.popupOverlay.popup${index + 1}`);
     popup.classList.add('active');
+    popup.style.transform = `translate(0px, 0px) scale(1)`;
     });
   });
   document.querySelectorAll('.popupOverlay').forEach(popup => {
@@ -93,7 +94,6 @@ window.onload = function () {
       {
         const delta = e.deltaY < 0 ? 1.1 : 0.9;
         scale *= delta;
-        
       }
       updateTransform();
     }, { passive: false });
