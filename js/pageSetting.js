@@ -73,27 +73,30 @@ window.onload = function () {
 
     const img = target.querySelector("img");
     target.addEventListener("keydown", (e) => {
-      if (e.shiftKey) {
+      if (e.key === "Shift") {
         isZooming = true;
+      }
+    });
+    target.addEventListener("keyup", (e) => {
+      if (e.key === "Shift") {
+        isZooming = false;
       }
     });
 
     target.addEventListener("wheel", e => {
+      e.preventDefault();
       if (!isZooming)
       {
-        e.preventDefault();
         offsetX -= e.deltaX;
         offsetY -= e.deltaY;
-        updateTransform();
       }
       else
       {
-        e.preventDefault();
         const delta = e.deltaY < 0 ? 1.1 : 0.9;
         scale *= delta;
-        updateTransform();
+        
       }
-      
+      updateTransform();
     }, { passive: false });
 
     function updateTransform() {
