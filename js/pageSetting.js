@@ -70,23 +70,22 @@ window.onload = function () {
     observer.observe(el);
   });
 
-  document.querySelectorAll(".popupContent").forEach((target, index) => {
+  document.querySelectorAll(".popupContent").forEach(target => {
 
-    const panAndzoom = target.querySelector(`.popupContent.popup${index + 1}`);
 
-    panAndzoom.addEventListener("mousedown", e => {
+    target.addEventListener("mousedown", e => {
       isDragging = true;
       lastX = e.clientX;
       lastY = e.clientY;
       img.style.cursor = "grabbing";
     });
 
-    panAndzoom.addEventListener("mouseup", () => {
+    target.addEventListener("mouseup", () => {
       isDragging = false;
       img.style.cursor = "grab";
     });
 
-    panAndzoom.addEventListener("mousemove", e => {
+    target.addEventListener("mousemove", e => {
       if (!isDragging) return;
       offsetX += e.clientX - lastX;
       offsetY += e.clientY - lastY;
@@ -95,7 +94,7 @@ window.onload = function () {
       updateTransform();
     });
 
-    panAndzoom.addEventListener("wheel", e => {
+    target.addEventListener("wheel", e => {
       e.preventDefault();
       const delta = e.deltaY < 0 ? 1.1 : 0.9;
       scale *= delta;
