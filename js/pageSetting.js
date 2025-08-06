@@ -44,8 +44,7 @@ window.onload = function () {
     const popup = document.querySelector(`.popupOverlay.popup${index + 1}`);
     popup.classList.add('active');
     const popcontents = popup.querySelector(".popupContent");
-    const img = popcontents.querySelector("img");
-    if(img){
+    if(!popup.querySelector("noscroll")){
       const height = popcontents.querySelector("img").clientHeight;
       updateTransform(popcontents,0,height/2,1);
       offsetX =0;offsetY = 0;
@@ -81,7 +80,7 @@ window.onload = function () {
   });
 
   document.querySelectorAll(".popupContent").forEach(target => {
-    if(!target.classList.contains("noscroll")) return;
+    if(target.classList.contains("noscroll")) return;
 
     target.addEventListener("keydown", (e) => {
       if (e.key === "Shift") {
