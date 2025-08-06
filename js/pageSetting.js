@@ -43,8 +43,17 @@ window.onload = function () {
   item.addEventListener('click', () => {
     const popup = document.querySelector(`.popupOverlay.popup${index + 1}`);
     popup.classList.add('active');
-    updateTransform(popup.querySelector(".popupContent"),0,0,1);
-    offsetX =0;offsetY = 0;
+    const popcontents = popup.querySelector(".popupContent");
+    const img = popcontents.querySelector("img");
+    if(img){
+      const height = popcontents.querySelector("img").clientHeight;
+      updateTransform(popcontents,0,height/2,1);
+      offsetX =0;offsetY = 0;
+    }
+    else{
+
+    }
+    
     });
   });
   document.querySelectorAll('.popupOverlay').forEach(popup => {
@@ -72,6 +81,7 @@ window.onload = function () {
   });
 
   document.querySelectorAll(".popupContent").forEach(target => {
+    if(!target.classList.contains("noscroll")) return;
 
     target.addEventListener("keydown", (e) => {
       if (e.key === "Shift") {
