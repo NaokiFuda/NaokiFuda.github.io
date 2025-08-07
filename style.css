@@ -279,6 +279,18 @@ body {
   padding: 10px;
 }
 
+.git-link{
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  margin-top: 12px;
+  padding: 6px 14px;
+  background-color: #141114;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
 .external-link {
   display: inline-block;
   margin-top: 12px;
