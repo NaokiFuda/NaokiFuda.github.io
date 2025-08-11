@@ -39,13 +39,13 @@ window.onload = function () {
   // すべてのpにbodyTextスタイル
   document.querySelectorAll("p").forEach(el => applyStyle(el, styleConfig.bodyText));
 
-  document.querySelectorAll(".pop-item").forEach((item,index) => {
+  document.querySelectorAll(".pop-item").forEach(item => {
   item.addEventListener('click', () => {
-    const popup = document.querySelector(`.popupOverlay.popup${index + 1}`);
+    const popup = document.querySelector(`.popupOverlay.popup${target.dataset.popup}`);
     popup.classList.add('active');
     const popcontents = popup.querySelector(".popupContent");
     if(!popup.querySelector("noscroll")){
-      const height = popcontents.querySelector("img").clientHeight / 2 - 300;
+      const height = popcontents.offsetHeight / 2 - 300;
       updateTransform(popcontents,0,height,1);
       offsetX =0;offsetY = height;
     }

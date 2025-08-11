@@ -25,15 +25,15 @@
 
     <div class="container">
         <section class="block leftText fadein" id="project1">
-            <div class="media left">
-                <img src="img/game01.jpg" alt="Game Screenshot">
+            <div class="media left grid-image-container">
+                <img src="img/game01.webp" alt="Game Screenshot">
             </div>
             <div class="info">
                 <h2 class="title">タイトル：ふわふわカート</h2>
                 <ul class="meta">
                 <li><strong>開発環境：</strong>Unity<span class="icon unity"></span> / Steam<span class="icon steam"></span></li>
                 <li><strong>想定プラットフォーム：</strong>PC / VR</li>
-                <li><strong>制作期間：</strong>3ヶ月</li>
+                <li><strong>制作期間：</strong>？？？</li>
                 </ul>
                 <p class="concept">
                 <strong>コンセプト：</strong>「赤ちゃんのかわいらしさと不安定さ」
@@ -41,8 +41,13 @@
                 <p class="notes">
                 <strong>小話：</strong>赤ん坊の首の据わらなさの表現としてスクリプトでボーンの回転を制御し揺れを再現してみました。紙やしっぽなどいろいろな表現に応用が利き大変便利なものですね。ゲームとしては運転で暴れる首を押さえながら必死にレースをする感じになります。
                 </p>
-                <p class="notes">
-                    <a href="https://github.com/NaokiFuda/FuwaFuwaCartVR/blob/main/Assets/Scripts/FuwaFuwaMovement.cs" target="_blank" class="git-link">首振りスクリプトをgitで見る →</a>
+                <p class="details">
+                    <div  class="set-link">
+                        <a href="https://github.com/NaokiFuda/FuwaFuwaCartVR/blob/main/Assets/Scripts/FuwaFuwaMovement.cs" target="_blank">首振りスクリプトをgitで見る →</a>
+                    </div>
+                    <div class="tips">
+                        揺れの力の計算を跳ね返り運動を初期姿勢に戻る強さとの押し引きにすることでシンプルながらも自在な振り子運動を実現できた。ローカル座標系で最初計算させていたため回転軸が捻じれていく問題を起こしてしまい、気づいて修正するまでに紆余曲折の苦戦を迫られてしまった。
+                    </div>
                 </p>
                 
             </div>
@@ -51,21 +56,21 @@
         <hr>
 
         <section class="block rightText fadein" id="project2">
-            <div class="media right" alt="Game Screenshot">
-                <img src="img/game02.jpg" alt="Game Screenshot">
+            <div class="media right grid-image-container" alt="Game Screenshot">
+                <img src="img/game02.webp" alt="Game Screenshot">
             </div>
             <div class="info">
                 <h2 class="title">タイトル：PlayRoomMonster</h2>
                 <ul class="meta">
                 <li><strong>開発環境：</strong>Unity<span class="icon unity"></span> / Steam<span class="icon steam"></span></li>
                 <li><strong>想定プラットフォーム：</strong>PC / VR</li>
-                <li><strong>制作期間：</strong>3ヶ月</li>
+                <li><strong>制作期間：</strong>？？？</li>
                 </ul>
                 <p class="concept">
                 <strong>コンセプト：</strong>「玩具が子供隠れる大迫力はちゃめちゃハイド＆シーク」
                 </p>
                 <p class="notes">
-                <strong>小話：</strong>VRでの動作とコントローラー操作のプレイ感の違いと情報量の違いを活かしたゲームデザイン、気持ちよく物を蹴散らしたり蹴散らされた物に隠れるドキドキ感を表現しました。
+                <strong>小話：</strong>VRでの動作とコントローラー操作のプレイ感の違いと情報量の違いを活かしたゲームデザイン、気持ちよく物を蹴散らしたり蹴散らされた物に隠れるドキドキ感を表現したい。片付けを意識したりうるさくしないように探すような巨人側のドキドキも要素として投入したいと考えている。完成した場合デモワールドをVRChatで公開する予定。
                 </p>
             </div>
         </section>
@@ -73,21 +78,21 @@
         <hr>
 
         <section class="block leftText fadein" id="project3">
-            <div class="media left" alt="Game Screenshot">
-            <img src="img/game03.jpg" alt="プロジェクト3画像">
+            <div class="media left grid-image-container" alt="Game Screenshot">
+            <img src="img/game03.webp" alt="プロジェクト3画像">
             </div>
             <div class="info">
                 <h2 class="title">タイトル：RocketDodge</h2>
                 <ul class="meta">
                 <li><strong>開発環境：</strong>Unity<span class="icon unity"></span> / Steam<span class="icon steam"></span></li>
                 <li><strong>想定プラットフォーム：</strong>PC / VR</li>
-                <li><strong>制作期間：</strong>3ヶ月</li>
+                <li><strong>制作期間：</strong>？？？</li>
                 </ul>
                 <p class="concept">
                 <strong>コンセプト：</strong>「四面楚歌！華麗に避けて生き残れ！」
                 </p>
                 <p class="notes">
-                <strong>小話：</strong>部族のデザインやクリーチャーの異物感の表現に苦心しました。ゲーム部分は操作の気持ちよさを重視して丁寧にアニメーションを作り込みました。SEからBGMに至るまで全部肉声を加工して作ってるんですよ。
+                <strong>小話：</strong>部族のデザインや設定を考えるのが楽しかったです。ゲーム部分は操作の気持ちよさを重視して丁寧にアニメーションを作り込みました。SEからBGMに至るまでの多くを肉声を加工して作ってみたのですが結構良くできたと自分では思います。
                 </p>
             </div>
         </section>
@@ -98,43 +103,179 @@
                 <div class="grid-container">
                     <div class="grid-item-pop-item">
                         <h3 class="grid-title">葉っぱの作り方</h3>
-                        <div class="grid-image-container pop-item"><img src="img/pop01.png" alt="Image 1"></div>
+                        <div class="grid-image-container pop-item" data-popup="1"><img src="img/pop01.webp" alt="Image 1"></div>
                         <p class="grid-caption">生成AIを利用した高品質高速作成フロー</p>
+                        <p class=" pop-item set-link" data-popup="1">詳細→</p>
                     </div>
 
                     <div class="grid-item-pop-item">
-                        <h3 class="grid-title">タイトル</h3>
-                        <div class="grid-image-container pop-item"><img src="img/pop02.png" alt="Image 2"></div>
-                        <p class="grid-caption">補足説明テキスト</p>
+                        <h3 class="grid-title">VRChatでの活動1</h3>
+                        <div class="grid-image-container pop-item" data-popup="2"><img src="img/pop02.webp" alt="Image 2"></div>
+                        <p class="grid-caption"><a href="https://www.immersivecloud.info/" target="_blank">ImmersiveCloud</a>というマーダーミステリーを公演する団体にてワールド制作などをしてます。画像は活動の一環として作成してみたビッグサイトのワールドです。</p>
+                        <p class=" pop-item set-link" data-popup="2">詳細→</p>
                     </div>
 
                     <div class="grid-item-pop-item">
-                        <h3 class="grid-title">タイトル</h3>
-                        <div class="grid-image-container pop-item"><img src="img/pop03.png" alt="Image 3"></div>
-                        <p class="grid-caption">補足説明テキスト</p>
+                        <h3 class="grid-title">VRChatでの活動2</h3>
+                        <div class="grid-image-container pop-item" dataset.popup="3"><img src="img/pop03.webp" alt="Image 3"></div>
+                        <p class="grid-caption">ワールドの作成やアバターの販売を積極的に行っており、社会的信頼とそれによる導線を得るため、また簡易なテストを行える場としてゲームワールドの公開をしております。</p>
                     </div>
                 </div> 
             </div>
             
         </section>
         <div class="popupOverlay popup1">
-                <div class="popupContent">
-                    <img src="img/over01.png" alt="how to make leaf">
+                <div class="popupContent grid-image-container">
+                    <img src="img/over01.webp" alt="how to make leaf">
+                </div>
+        </div>
+        <div class="popupOverlay popup2">
+            <div class="popupContent block rightText fadein">
+                <div class="media left grid-image-container">
+                    <img src="img/over02_01.webp" alt="Game Screenshot">
+                </div>
+                <div class="info">
+                    <p class="notes">
+                        <h2 class="title">googleMapを用いた調査</h2>
+                        複数の画像を基に辻褄を合わせて作成してみました。現地に行かずとも資料を集められる良い時代ですね。背景に該当する箇所なので特徴的な橋や道、針葉樹の位置などのシェルエットや配置だけを再現しマテリアルは色合いを合わせ目立たないようなものを設定します。
+
+                    </p>
+                    <p class="details">
+                        <div  class="set-link">
+                            <a href="https://vrchat.com/home/world/wrld_1960ba66-2e44-40ab-8340-ae0e8941c76f/info" target="_blank">ワールドリンク →</a>
+                        </div>
+                        <div class="tips">
+                            VRC公式のアセット, BGM, 動画プレイヤーprefab以外のシーン上の3Dモデル、アニメーション、エフェクト、スクリプトのすべては自作です。
+                        </div>
+                    </p>
+            
+                </div>
+                <div class="media left grid-image-container">
+                    <img src="img/over02_02.webp" alt="Game Screenshot">
+                </div>
+                <div class="info">
+                    <p class="notes">
+                        <h2 class="title">タイリング、Graphics.DrawMeshInstanced</h2>
+                        会場へ向かう導線の導線は没入感に影響するためタイルの模様や解像度をUVを調節しループテクスチャを用いてタイリングさせて高解像度を確保します。解像度の高さの違いで視線を誘導します。落下防止の柵などシェルエットの端になるオブジェクトは特に丁寧に作成し、DrawMeshInstancedを用いて軽量さと表現を両立します。並びが単純なのも違和感ないInstancingに有効ですね！
+                    </p>
+                </div>
+                <div class="media left grid-image-container">
+                    <img src="img/over02_03.webp" alt="Game Screenshot">
+                </div>
+                <div class="info">
+                    <p class="notes">
+                        <h2 class="title">cutoffテクスチャとplaneメッシュ</h2>
+                        樹木に使用する葉などと同様に草を絡ませる支柱のようなものなどあまり注目されない箇所の構造を透過範囲の描写をdiscardするマテリアルを適用したメッシュの多重構造を採用することで表現している。
+                    </p>
+                </div>
+                <div class="media left grid-image-container">
+                    <img src="img/over02_04.webp" alt="Game Screenshot">
+                </div>
+                <div class="info">
+                    <p class="notes">
+                        <h2 class="title">ImmersiveSight</h2>
+                        建物などの構造物は著作権で守られているわけではないが建造物名が意図されない用途で用いられることには問題があろうということでImmersiveCloudに合わせて様々な遊びに使用する空間というニュアンスを含ませた遊び心のある名前をフォントを似せて掲げてみた。実物のあるオブジェクトの再現では縮尺やバランス、質感の一致することがいかに大事か、他の製作者が公開しているビッグサイトと見比べて実感した。私の作成したビッグサイトが一番ビッグサイトしてる！！
+                    </p>
+                    <p class="details">
+                        <div  class="set-link">
+                            <a href="https://vrchat.com/home/world/wrld_84c3f909-f70f-4e1c-86f6-0b935cf7505a/info" target="_blank">ワールドリンク →</a>
+                        </div>
+                        <div class="tips">
+                            ちょっとしたカードゲームのプレイも可能です。このワールドはビッグサイトにて開催されたXR・メタバース＆コンテンツビジネスワールドのイマーシブクラウドのブースにてビッグサイトにいる状態でビッグサイトでのちょっとした事件現場に遭遇するというシチュエーションをVRで体験できる技術デモとして納品したワールドの再利用となります。故おひげさんや柳透さんが好評で名詞を沢山頂けたとホクホクした声を聞かせてくれたのが懐かしい思い出としてよみがえります。
+                        </div>
+                    </p>
+                </div>
+                <div class="media left grid-image-container">
+                    <img src="img/over02_05.webp" alt="Game Screenshot">
+                </div>
+                <div class="info">
+                    <p class="notes">
+                        <h2 class="title">蕎麦屋たばべ</h2>
+                        現実にある店舗とのコラボ作品であるマーダーミステリー『打ち立て蕎麦、つゆからいくか？塩からいくか？』のクリア後記念写真撮影で撮った写真のひとつです。たなべさんが作成した３Dモデルの当たりを基にメッシュを調節しテクスチャを作成してgoogleMapで公開されていた写真を参考にぱっと見の雰囲気を寄せるように質感およびライティングを調節しました。現実感のある表現が欲しかったのでMoodWareさんの<a href="https://assetstore.unity.com/packages/2d/textures-materials/sky/city-street-skyboxes-vol-1-157401" target="_blank">City Street Skyboxes Vol. 1</a>の濃厚な空気感のある空模様をお借りしました。ポストプロセッシングを利用して影とAutoExposureを利用した光の溢れ感を露光の調節で表現し没入感を高める試みをしています。テキストを大量に読む必要のある屋内ではポスプロを切るようにしたのですが、その境目で露光の変化が気にならないような微調節が求められました。プレイヤーにも評判で実際に店舗に行ったみたい！実際に行った時に初めて来たとは思えない既視感だった！などのお声をいただいています。
+                    </p>
+                    <p class="details">
+                        <div  class="set-link">
+                            <a href="https://vrchat.com/home/world/wrld_b5abd97e-c488-497c-8f1f-fc762bfd848a/info" target="_blank">ワールドリンク →</a>
+                        </div>
+                        <div class="tips">
+                            非公開ワールドでありギミックもプレイ用にそのままあります。室内に事件現場や自作したたなべさんのところで提供されているメニューの再現３Dモデルも設置されています。
+                        </div>
+                    </p>
                 </div>
             </div>
-            <div class="popupOverlay popup2">
-                <div class="popupContent noscroll">
-                    <h2>セッション中</h2>
-                    <p>ここに内容を書く</p>
-                    <button class="closePopup">閉じる</button>
-                </div>
+        </div>
+        <div class="popupOverlay popup3">
+            <div class="popupContent　block rightText fadein">
+                    <div class="media left grid-image-container">
+                        <img src="img/over03_01.webp" alt="Game Screenshot">
+                    </div>
+                    <div class="info">
+                        <p class="notes">
+                            <h2 class="title">洞窟から始まる</h2>
+                            暗く狭い空間からスタートすることで解放感と空間のきらびやかさが３割増しする気がします。謎の黒いキューブを触ってみると埃が払われ自分が見える鏡になるというギミックを仕込むことでホームワールドに求められる機能と世界観の説明、ゲームの意図を伝えることを目指しています。
+                        </p>
+                    </div>
+                    <div class="media left grid-image-container">
+                        <img src="img/over03_02.webp" alt="Game Screenshot">
+                    </div>
+                    <div class="info">
+                        <p class="notes">
+                            <h2 class="title">unityDefaultSky</h2>
+                            UnityのDefaultSkyってDirectionalLightの反映をしてくれるし実際の飛行機から見た空の青のグラデーションの再現がとても良くできていると思うんですよね。空気感がないのは雲がないからだ！ということで内側を向いたスフィアを対象として単純な形のもわもわした透明な白を描いてみてパーティクルで配置してみました。単純な発想の割りに簡単に空模様と雰囲気を演出できてクリエイターとして先人の努力の結晶を読み解いてその意図を活かすように整えることは美しさを生むよなあと他者への尊敬の大切さをしみじみと感じました。
+                        </p>
+                    </div>
+                    <div class="media left grid-image-container">
+                        <img src="img/over03_03.webp" alt="Game Screenshot">
+                    </div>
+                    <div class="info">
+                        <p class="notes">
+                            <h2 class="title">溜まった水</h2>
+                            水ってやっぱあるなら触りたいですよね。インタラクティブな水に対してどのような体験が望まれるのか？自分だったらこれくらいは欲しい！を詰め込んでみたのがこの緑に怪しく輝くふたつの水たまりです。綺麗な水に飛び込んだ時の水しぶき、音、視界の歪み、圧力…は無理ですが浮遊感と腕に伝う水滴とその質量！
+                        </p>
+                        <p class="details">
+                            <div  class="set-link">
+                                <a href="https://github.com/NaokiFuda/GizmoWork/blob/main/Assets/gigigi/World/Nazotoki/Script/HandSplashWater.cs" target="_blank">gitリンク →</a>
+                            </div>
+                            <div class="tips">
+                                簡単なコードですが、水中に腕に追従するコライダーがどれだけの時間あったのか、速度は十分か？（速度がない場合は水が逃げてしまいtimerが0にリセットされる）などを判定し水面から出た瞬間パーティクルの角度と量、音量を調節してみています。ただ水をかけあうだけでもそこには楽しいコミュニケーションが生まれると思うのでちょっとした簡単な一手間が誰かの喜びをびっくりするくらい増幅してくれるのではないかなと期待しています。知性こそがエントロピーの増加とそれに伴う無意味の蔓延に抗うためのただひとつの武器であると信じています。
+                            </div>
+                        </p>
+                    </div>
+                    <div class="media left grid-image-container">
+                        <img src="img/over03_04.webp" alt="Game Screenshot">
+                    </div>
+                    <div class="info">
+                        <p class="notes">
+                            <h2 class="title">販売アバター達</h2>
+                            いわゆる技術デモと世界観の強化としてNPCを設置してみました。アニメーションでだらけるカラカル獣人といつの間にか忍び寄る小さな謎のネズミっぽい生き物
+                        </p>
+                        <p class="details">
+                            <div  class="set-link">
+                                <a href="https://github.com/NaokiFuda/GizmoWork/blob/main/Assets/gigigi/World/Nazotoki/NPC/RatRogics.cs" target="_blank">gitリンク →</a>
+                            </div>
+                            <div class="tips">
+                                ネズミ君のロジックは単純です。目の方向にrayを飛ばしてターゲットに設定したオブジェクトがあれば歩きだし、一定範囲まで近づくあるいはターゲットが見えなくなったら待機し、待機中は頭を振ってrayを振り回すことでターゲットをサーチしています。センサーを持つこと、それを使用する首の角度などの制限、センサーの反応に対する状態の保持、その状態に応じた反応としてのメソッドの切り替え。単純な組み合わせを汎用的にあれそれの指示と併せて組み合わせるだけで有機的な生物的な動きを実現できるであろう、より興味深いNPCのアルゴリズムを考えるためのプロトタイプです。RocketDodgeプロジェクトやFuwaFuwaCartの対戦NPCもこの考えを基に作成しようと試み苦戦しています。楽しいです。
+                            </div>
+                        </p>
+                    </div>
+                    <div class="media left grid-image-container">
+                        <img src="img/over03_05.webp" alt="Game Screenshot">
+                    </div>
+                    <div class="info">
+                        <p class="notes">
+                            <h2 class="title">テント</h2>
+                            すべての遊びの要素の起点をここに集約させています。無駄になにもない空間を歩き回らされるのはユーザーにとってストレスにしかなりえず、よほどの魅力がなければ動かないで済むように動くことを想定すべきです。興味を持ってなにかをしぶしぶ触れば必ずなにかが起こってしまう。そういうプレゼントボックスのような構造として設計しています。
+                        </p>
+                        <p class="details">
+                            <div  class="set-link">
+                                <a href="https://vrchat.com/home/world/wrld_1960ba66-2e44-40ab-8340-ae0e8941c76f/info" target="_blank">ワールドリンク →</a>
+                            </div>
+                            <div class="tips">
+                                世間に公開されている謎解きって英語と日本語が説明なしで混ざり合っていたり全く示唆されていない前提知識が唐突に要求されるトリビア自慢になったりしていて満足感が薄いなという気持ちから生まれたワールドです。徹底的にインタラクティブなオブジェクト、視差を用いた表現に溢れた世界を用意し、それを使うのだと慣れさせた状態でその慣れたものを用いたさり気ない謎を配置することで意識を誘導し納得感を上げること、説明の最小化と没入感の最大化を目指しました。肝心の謎解きが謎解きをする種になるギミックの作成で満足してしまい謎解きワールドとしての本分が風化して忘れ去られてしまいました。視力検査っぽいオブジェクトに足してアクションをすると視力検査っぽいミニゲームが遊べたりしますよ。
+                            </div>
+                        </p>
+                    </div>
             </div>
-            <div class="popupOverlay popup3">
-                <div class="popupContent noscroll">
-                    <h2>セッション中</h2>
-                    <p>ここに内容を書く</p>
-                    <button class="closePopup">閉じる</button>
-                </div>
         </div>
 
         <section id="booth" class="block fadein">
@@ -142,10 +283,10 @@
                 <h2>Booth販売ページ</h2>
                 <div class="grid-section">
                     <div class="grid-container">
-                        <div class="grid-item"><a href="https://gizmo-pants.booth.pm/items/6951521" target="_blank"><img src="img/booth_Item01.png" alt="Image 1"></a></div>
-                        <div class="grid-item"><a href="https://gizmo-pants.booth.pm/items/6888676" target="_blank"><img src="img/booth_Item02.png" alt="Image 1"></a></div>
-                        <div class="grid-item"><a href="https://gizmo-pants.booth.pm/items/6888560" target="_blank"><img src="img/booth_Item03.png" alt="Image 1"></a></div>
-                        <div class="grid-item"><a href="https://gizmo-pants.booth.pm/items/6408458" target="_blank"><img src="img/booth_Item04.png" alt="Image 1"></a></div>
+                        <div class="grid-item"><a href="https://gizmo-pants.booth.pm/items/6951521" target="_blank"><img src="img/booth_Item01.webp" alt="Image 1"></a></div>
+                        <div class="grid-item"><a href="https://gizmo-pants.booth.pm/items/6888560" target="_blank"><img src="img/booth_Item02.webp" alt="Image 1"></a></div>
+                        <div class="grid-item"><a href="https://gizmo-pants.booth.pm/items/6888676" target="_blank"><img src="img/booth_Item03.webp" alt="Image 1"></a></div>
+                        <div class="grid-item"><a href="https://gizmo-pants.booth.pm/items/6408458" target="_blank"><img src="img/booth_Item04.webp" alt="Image 1"></a></div>
                     </div> 
                     <div class="grid-link">
                         <p>こちらはBoothで販売中の作品です。詳細や購入は以下からどうぞ。</p>
@@ -170,10 +311,10 @@
    </div>
     <footer>
         <div class="footer-content">
-            <p>卒業：バンタンゲームアカデミー東京校３年制VRクリエイター専攻、琉球大海洋自然科学科生物系</p>
+            <p>卒業：バンタンゲームアカデミー東京校年制VRクリエイター専攻、琉球大海洋自然科学科生物系</p>
             <p>生き物の行動原理をのんびり眺めるのが好きです。大学ではもっぱらナマコに師事して彼らがなに考えて生きてるのか想いを馳せていました。</p>
             <div class="footer-row">
-                <span class="copyright"></span>© 2025 布田 直樹（別名:ぎずも・ぱんっ）　</span >
+                <span class="copyright"></span>© 2025 布田 直樹（別名:ぎずも・ぱんっ）</span >
                 <span class="contact">連絡先：<a href="mailto:naokifuda@gmail.com">naokifuda@gmail.com</a></span >
             </div>
         </div>
