@@ -114,11 +114,11 @@ window.onload = function () {
       startY = e.touches[0].clientY;
     });
     target.addEventListener('touchmove', e =>{
-      offsetX +=  e.touches[0].clientX - startX ;
-      offsetY +=  e.touches[0].clientY - startY;
+      offsetX =  e.touches[0].clientX - startX;
+      offsetY =  e.touches[0].clientY - startY;
       updateTransform(target,offsetX,offsetY,scale);
     });
-    
+
   });
 };
 
