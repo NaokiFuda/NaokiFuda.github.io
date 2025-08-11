@@ -41,7 +41,7 @@ window.onload = function () {
 
   document.querySelectorAll(".pop-item").forEach(item => {
   item.addEventListener('click', () => {
-    const popup = document.querySelector(`.popupOverlay.popup${target.dataset.popup}`);
+    const popup = document.querySelector(`.popupOverlay.popup${item.dataset.popup}`);
     popup.classList.add('active');
     const popcontents = popup.querySelector(".popupContent");
     if(!popup.querySelector("noscroll")){
