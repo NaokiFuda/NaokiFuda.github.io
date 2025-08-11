@@ -39,6 +39,11 @@ body {
   width: 100%;
   height: auto;
 }
+.popupContent .popup-image img{
+  width: 100%;
+  height: auto;
+}
+
 .grid-wrapper {
   display: block; /* ← 親の flex の影響を断つ */
   width: 100%;
