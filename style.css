@@ -84,6 +84,9 @@ a:hover {
   gap: 8px; /* 子要素間の隙間 */
   /*border: 1px solid #ddd;  境界線（デバッグ用） */
 }
+.grid-item-pop-item:hover img {
+  transform: scale(1.03);
+}
 
 /* タイトル、画像、説明のスタイル */
 .grid-title {
