@@ -25,11 +25,9 @@ body {
 }
 
 .popupContent {
-  background: black;
   padding: 2em;
   border-radius: 10px;
   text-align: center;
-  flex-direction: column;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -204,7 +202,7 @@ body {
 
 .set-link{
   display: inline-block;
-  color: white;
+  color: #adadadd7;
   text-decoration: none;
   margin-top: 12px;
   padding: 6px 14px;
@@ -214,7 +212,14 @@ body {
   transition: background-color 0.3s ease;
   flex: 0 0 30%;
 }
-
+.set-link a{
+  padding: 0.5em 1em;
+  border-radius: 6px;
+  background-color: #1b1b1bd7;
+  color: #adadadd7;
+  text-decoration: none;
+  font-weight: bold;
+}
 
 .leftText {
   flex-direction: row;
