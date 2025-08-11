@@ -22,6 +22,7 @@ const styleConfig = {
   let offsetX = 0, offsetY = 0;
   let scale = 1;
   let startX =0, startY=0;
+  let initialLeft =0, initialTop=0;
 
 // スタイルを適用する関数
 function applyStyle(element, styleObj) {
@@ -112,10 +113,11 @@ window.onload = function () {
     target.addEventListener('touchstart', e =>{
       startX = e.touches[0].clientX;
       startY = e.touches[0].clientY;
+      initialLeft =target.offsetLeft, initialTop=target.offsetTop;
     });
     target.addEventListener('touchmove', e =>{
-      offsetX =  e.touches[0].clientX - startX;
-      offsetY =  e.touches[0].clientY - startY;
+      offsetX = initialLeft + e.touches[0].clientX - startX;
+      offsetY = initialTop + e.touches[0].clientY - startY;
       updateTransform(target,offsetX,offsetY,scale);
     });
 
