@@ -13,8 +13,8 @@ body {
 .popupOverlay {
   position: fixed;
   top: 0; left: 0;
-  width: 100vh;
-  height: 100vh;
+  width: 100vw; /* Use vw for width */
+  height: 100vh; /* Keep vh for height */
   background: rgba(0, 0, 0, 0.7);
   display: none;
   justify-content: center;
@@ -26,6 +26,7 @@ body {
 }
 
 .popupContent {
+  max-width: 80%;
   width: 80%;
   padding: 2em;
   border-radius: 10px;
@@ -36,6 +37,7 @@ body {
 }
 .popupContent .popup-image{
   width: 100%;
+  height: auto;
 }
 .grid-wrapper {
   display: block; /* ← 親の flex の影響を断つ */
