@@ -31,6 +31,9 @@ body {
   padding: 2em;
   border-radius: 10px;
   text-align: center;
+  background: #2d2d2d;
+}
+.two-rows{
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 0 auto;
