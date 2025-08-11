@@ -266,8 +266,6 @@ a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%; /* 適宜調整 */
-    max-width: 150px; /* 最大幅を設定 */
 }
 
 .video-popup video {
@@ -286,8 +284,7 @@ a:hover {
 .thumbnail {
     width: 100%;
     display: block;
-    max-width: 800px;
-    max-height: 450px;
+    max-width: 150px; 
 }
 
 /* 再生アイコンのスタイル */
