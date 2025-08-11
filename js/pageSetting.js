@@ -108,7 +108,9 @@ window.onload = function () {
       updateTransform(target,offsetX,offsetY,scale);
     }, { passive: false });
   });
-  document.addEventListener('DOMContentLoaded', function() {
+};
+
+ document.addEventListener('DOMContentLoaded', function() {
       const thumbnailButton = document.querySelector('.thumbnail-button');
       const videoOverlay = document.querySelector('.video-overlay');
       const videoPlayer = document.getElementById('videoPlayer');
@@ -127,7 +129,6 @@ window.onload = function () {
           videoPlayer.currentTime = 0; // 動画を最初に戻す
       });
   });
-};
 
 function updateTransform(target,offsetX,offsetY,scale) {
       target.style.transform = `translate(${offsetX}px, ${offsetY}px) scale(${scale})`;
