@@ -527,4 +527,9 @@ hr {
   .text, .media {
     width: 100%;
   }
+  .two-rows{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+  } 
 }
