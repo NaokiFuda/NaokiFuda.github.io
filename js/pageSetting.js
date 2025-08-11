@@ -108,7 +108,25 @@ window.onload = function () {
       updateTransform(target,offsetX,offsetY,scale);
     }, { passive: false });
   });
+  document.addEventListener('DOMContentLoaded', function() {
+      const thumbnailButton = document.querySelector('.thumbnail-button');
+      const videoOverlay = document.querySelector('.video-overlay');
+      const videoPlayer = document.getElementById('videoPlayer');
+      const closeButton = document.querySelector('.close-button');
 
+      // サムネイルボタンがクリックされた時の処理
+      thumbnailButton.addEventListener('click', function() {
+          videoOverlay.style.display = 'block';
+          videoPlayer.play();
+      });
+
+      // 閉じるボタンがクリックされた時の処理
+      closeButton.addEventListener('click', function() {
+          videoOverlay.style.display = 'none';
+          videoPlayer.pause();
+          videoPlayer.currentTime = 0; // 動画を最初に戻す
+      });
+  });
 };
 
 function updateTransform(target,offsetX,offsetY,scale) {
