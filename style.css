@@ -34,7 +34,9 @@ body {
   grid-template-columns: 1fr 1fr;
   margin: 0 auto;
 }
-
+.popupContent .popup-image{
+  width: 100%;
+}
 .grid-wrapper {
   display: block; /* ← 親の flex の影響を断つ */
   width: 100%;
