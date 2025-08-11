@@ -13,7 +13,8 @@ body {
 .popupOverlay {
   position: fixed;
   top: 0; left: 0;
-  width: 80%;
+  width: 100vw;
+  height: 100vw;
   background: rgba(0, 0, 0, 0.7);
   display: none;
   justify-content: center;
@@ -25,6 +26,7 @@ body {
 }
 
 .popupContent {
+  width: 80%;
   padding: 2em;
   border-radius: 10px;
   text-align: center;
