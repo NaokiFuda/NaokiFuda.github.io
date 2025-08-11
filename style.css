@@ -10,6 +10,14 @@ body {
   margin-right: auto;
 }
 
+a {
+  color: #b2b4d2; 
+  text-decoration: none; /* 下線を削除 */
+}
+
+a:hover {
+  text-decoration: underline; /* ホバー時に下線を表示 */
+}
 .popupOverlay {
   position: fixed;
   top: 0; left: 0;
@@ -220,12 +228,14 @@ body {
   display: inline-block;
   color: #adadadd7;
   text-decoration: none;
-  margin-top: 12px;
+  margin: 15px;
   padding: 6px 14px;
   border-radius: 6px;
   font-weight: 600;
   transition: background-color 0.3s ease;
-  flex: 0 0 30%;
+  background: #0f0f0f;
+  white-space: nowrap; 
+  align-self: flex-start;
 }
 .set-link a{
   padding: 0.5em 1em;
@@ -234,6 +244,10 @@ body {
   color: #adadadd7;
   text-decoration: none;
   font-weight: bold;
+}
+.set-link:hover {
+  cursor: pointer;
+  background-color: #202020;
 }
 
 .leftText {
