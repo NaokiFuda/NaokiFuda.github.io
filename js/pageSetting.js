@@ -113,7 +113,8 @@ window.onload = function () {
     target.addEventListener('touchstart', e =>{
       startX = e.touches[0].clientX;
       startY = e.touches[0].clientY;
-      initialLeft =target.offsetLeft, initialTop=target.offsetTop;
+      initialLeft =target.offsetLeft;
+      initialTop=target.offsetTop;
     });
     target.addEventListener('touchmove', e =>{
       offsetX = initialLeft + e.touches[0].clientX - startX;
