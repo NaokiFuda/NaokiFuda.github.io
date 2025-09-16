@@ -278,7 +278,7 @@ a:hover {
     position: relative;
     cursor: pointer;
     display: inline-block;
-    max-width: 50px;
+    max-width: 150px;
 }
 
 .thumbnail {
@@ -293,7 +293,7 @@ a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 5rem;
+    font-size: 1rem;
     color: white;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     pointer-events: none; /* クリックイベントがサムネイルに伝わるようにする */
