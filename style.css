@@ -465,6 +465,13 @@ hr {
 }
 
 .hero {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
+  
   height: 100vh;
   background: url('img/cover.webp') center/cover no-repeat;
   color: white;
