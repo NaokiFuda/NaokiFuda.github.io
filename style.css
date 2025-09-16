@@ -466,7 +466,7 @@ hr {
 
 .hero {
   height: 100vh;
-  background: url('img/cover.jpg') center/cover no-repeat;
+  background: url('img/cover.webp') center/cover no-repeat;
   color: white;
   display: flex;
   flex-direction: column;
