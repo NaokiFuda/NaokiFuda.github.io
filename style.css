@@ -278,7 +278,7 @@ a:hover {
     position: relative;
     cursor: pointer;
     display: inline-block;
-    max-width: 150px;
+    max-width: 50px;
 }
 
 .thumbnail {
