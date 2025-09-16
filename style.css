@@ -299,7 +299,7 @@ a:hover {
     pointer-events: none; /* クリックイベントがサムネイルに伝わるようにする */
 }
 .play-icon:hover {
-  transform: translateY(-5px);
+  transform: scale(1.03);
 }
 
 /* 閉じるボタン */
